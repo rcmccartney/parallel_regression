@@ -18,7 +18,7 @@ public class URLDataStrategySeq implements DataStrategy {
 	//number of feautres in the dataset
 	public static final int WIDTH = 3231961;
 	//Set these to be slices of the features you want to use
-	public static final int SLICE = WIDTH;
+	public static final int SLICE = 10;
 	//lowest index to train with
 	public static final int LOW_SLICE = 1;
 	// highest index to train with, exclusive of this value
@@ -81,7 +81,7 @@ public class URLDataStrategySeq implements DataStrategy {
 		for (String name : names) {
 			if (!name.equals("FeatureTypes"))
 				parseData(new Scanner(new File(basedir.getPath() + File.separator + name)));
-			if (size == records)
+			if ((size+testSize) == records)
 				break;
 		}
 		if (rank != -1)
@@ -145,7 +145,7 @@ public class URLDataStrategySeq implements DataStrategy {
 		String[] line;
 	
 		while (aScanner.hasNext()) {
-			
+
 			line = aScanner.nextLine().split("\\s+");
 			
 			if (testPercent != 0 && (rand.nextDouble() < testPercent)) {
@@ -163,7 +163,7 @@ public class URLDataStrategySeq implements DataStrategy {
 			}
 			//increment size of this data structure
 			//records is default to -1, so will read all the data unless it is overwritten
-			if (size == records)
+			if ( (size+testSize) == records)
 					break;
 		}
 		
