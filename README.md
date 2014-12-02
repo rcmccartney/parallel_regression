@@ -3,7 +3,7 @@ parallel_regression
 
 PJ2 library
 
-This library uses the PJ2 library for parallel programming, located at
+This program uses the PJ2 library for parallel programming, located at
 http://www.cs.rit.edu/~ark/pj2.shtml.
 
 The paradigm runs on a multicore or multinode cluster for running Tasks
@@ -22,6 +22,7 @@ To run the programs (note that Batched versions of both Sequential and
 Parallel regression can be run with a command-line argument):
 
 ****************Sequential version********************
+
 Usage: java pj2 LogRegSeq <trainFile>
 <trainFile> is a real-valued data file
 #####################
@@ -44,6 +45,7 @@ The following are additional options available:
 #####################
 
 ****************Parallel version********************
+
 Usage: java pj2 LogRegSeq <trainFile> <chunked>
 <trainFile> is a real-valued data file
 <chunked> is boolean to specify the data was chunked into sub-files on cluster nodes
@@ -67,6 +69,7 @@ The following are additional options available:
 #####################
 
 ****************SGD Parallel version********************
+
 Usage: java LogRegParSGD <trainFile>
 <trainFile> is a real-valued data file
 #####################
@@ -86,6 +89,7 @@ The following are additional options available:
 #####################
 
 ****************SGD Sequential version********************
+
 Usage: java LogRegSGD <trainFile>
 <trainFile> is a real-valued data file
 #####################
@@ -103,4 +107,3 @@ The following are additional options available:
 [converge=int] number of steps before checking convergence, default is 500
 [test=double] percent (between 0-1) of train examples to set aside for test, default is 0
 #####################
-
