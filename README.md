@@ -18,6 +18,41 @@ mini-batch training for stochastic optimization. In Proceedings of the
 mining (KDD '14). ACM, New York, NY, USA, 661-670. 
 URL:http://dl.acm.org/citation.cfm?id=2623330.2623612&coll=DL&dl=ACM&CFID=415399891&CFTOKEN=69514427
 
+The URLDataStrategy class is a class specifically implemented for the large 
+URL Reputation dataset, archived at https://archive.ics.uci.edu/ml/datasets/URL+Reputation.
+This dataset is extremely sparse and stored in SVM light format, so the URLDataStrategy 
+implements some unique ways of performing the dot product.  Here is a link to the paper: 
+Justin Ma, Lawrence K. Saul, Stefan Savage, and Geoffrey M. Voelker. 2009. 
+Identifying suspicious URLs: an application of large-scale online learning. 
+In Proceedings of the 26th Annual International Conference on Machine Learning 
+(ICML '09). ACM, New York, NY, USA, 681-688. 
+URL:http://cseweb.ucsd.edu/~savage/papers/ICML09.pdf
+
+The RegularDataStrategy is the class that should be used for most logistic regression datasets, where 
+all the data is in a single file, there are only two classes, the class decision is any of the rows 
+(set this on the command line), and the classes are ordered sequentially (either 0/1, 1/2, 2/3, etc).
+
+Using batch training on a 10 node cluster with all 3231961 features and 2396130 instances, batch training 
+achieved 94% accuracy on a 20% test set after only approximately 6 minutes of training.  Stochaistic 
+gradient descent on a single node achieved 97.4% accuracy in approximately 1 hour of training, using 
+a parallelized for loop over updates to the weight arrray.  
+
+Cluster description:
+Frontend supervisory node — tardis.cs.rit.edu
+Dual-core AMD Opteron 1214 processor
+1.0 GHz clock
+2 GB main memory
+Ubuntu 12.04 LTS 64-bit Linux
+Ten backend computational nodes — dr00 through dr09, each with:
+Two AMD Opteron 2218 processors
+Two CPU cores per processor
+Four threads
+2.6 GHz clock
+8 GB main memory
+Ubuntu 12.04 LTS 64-bit Linux
+1-Gbps switched Ethernet backend interconnection network
+Aggregate 40 threads, 80 GB main memory
+
 To run the programs (note that Batched versions of both Sequential and 
 Parallel regression can be run with a command-line argument):
 
