@@ -81,11 +81,11 @@ The following are additional options available:
 
 ****************Parallel version********************
 
-Usage: java pj2 LogRegSeq <trainFile> <chunked>
+Usage: java pj2 LogRegPar <trainFile> 
 <trainFile> is a real-valued data file
-<chunked> is boolean to specify the data was chunked into sub-files on cluster nodes
 #####################
 The following are additional options available:
+[chunked=boolean] to specify the data was chunked into sub-files on cluster nodes, default is true
 [seed=long] value to seed the prng, default is 1L
 [testFile=file] specify test set, default is <trainFile>
 [alpha=double] specify learning rate, default is 0.05
@@ -100,6 +100,26 @@ The following are additional options available:
 [batched=int] number of batches to use, default is none
 [gamma=double] gamma used for batch cost, default is 100
 [biter=int] iterations to use on one batch, default is 5
+[test=double] percent (between 0-1) of train examples to set aside for test, default is 0
+#####################
+
+****************SGD Sequential version********************
+
+Usage: java LogRegSGD <trainFile>
+<trainFile> is a real-valued data file
+#####################
+The following are additional options available:
+[seed=long] value to seed the prng, default is 1L
+[testFile=file] specify test set, default is <trainFile>
+[alpha=double] specify learning rate, default is 0.05
+[sep=char] specify separator, default is whitespace
+[class=int] specify class location, default is last column in row
+[eps=double] specify convergence threshold, defaults to 0.000001
+[steps=long] specify number of iterations instead of eps convergence
+[thr=double] specify threhold of class decision, default is 0.5
+[snap=int] snapshot interval, default is 0
+[records=int] number of records to process in the data, default is all data
+[converge=int] number of steps before checking convergence, default is 500
 [test=double] percent (between 0-1) of train examples to set aside for test, default is 0
 #####################
 
@@ -123,22 +143,3 @@ The following are additional options available:
 [test=double] percent (between 0-1) of train examples to set aside for test, default is 0
 #####################
 
-****************SGD Sequential version********************
-
-Usage: java LogRegSGD <trainFile>
-<trainFile> is a real-valued data file
-#####################
-The following are additional options available:
-[seed=long] value to seed the prng, default is 1L
-[testFile=file] specify test set, default is <trainFile>
-[alpha=double] specify learning rate, default is 0.05
-[sep=char] specify separator, default is whitespace
-[class=int] specify class location, default is last column in row
-[eps=double] specify convergence threshold, defaults to 0.000001
-[steps=long] specify number of iterations instead of eps convergence
-[thr=double] specify threhold of class decision, default is 0.5
-[snap=int] snapshot interval, default is 0
-[records=int] number of records to process in the data, default is all data
-[converge=int] number of steps before checking convergence, default is 500
-[test=double] percent (between 0-1) of train examples to set aside for test, default is 0
-#####################

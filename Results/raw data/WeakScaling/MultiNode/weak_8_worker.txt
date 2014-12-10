@@ -1,0 +1,115 @@
+Job 1438 launched Sun Nov 30 20:37:11 EST 2014
+Job 1438 started Sun Nov 30 20:37:11 EST 2014
+Worker 5: Read 176096 instances in 26.004 seconds
+Worker 4: Read 191937 instances in 27.510 seconds
+Worker 1: Read 191937 instances in 28.045 seconds
+Worker 7: Read 191937 instances in 28.240 seconds
+Worker 3: Read 191937 instances in 29.287 seconds
+Worker 0: Read 191937 instances in 29.441 seconds
+Worker 2: Read 200000 instances in 30.889 seconds
+Worker 6: Read 191937 instances in 31.111 seconds
+Logistic regression took 195.472 seconds in 2000 iterations
+Init:	Cost 0.6585 Sq Error 0.2143
+Final:	Cost 0.1856 Sq Error 0.0520
+Weight vector: w0=1.132 w1=-0.738 w2=-0.601 w3=-0.405 w4=-0.016 w5=0.798 w6=-0.740 w7=-0.319 w8=-0.757 w9=0.593 w10=0.254 ...
+Number of features with bias term: 51
+Classification took 0.033 seconds
+          -1        1
+ -1   234903    19248
+  1     8263   120065
+Accuracy: 92.807%
+Precision: 86.184%
+Recall: 93.561%
+Job 1438 finished Sun Nov 30 20:40:56 EST 2014 time 225349 msec
+Job 1491 launched Sun Nov 30 21:00:43 EST 2014
+Job 1491 started Sun Nov 30 21:00:43 EST 2014
+Worker 2: Read 150000 instances in 21.629 seconds
+Worker 7: Read 150000 instances in 21.627 seconds
+Worker 4: Read 150000 instances in 21.807 seconds
+Worker 6: Read 150000 instances in 22.098 seconds
+Worker 3: Read 150000 instances in 22.279 seconds
+Worker 1: Read 150000 instances in 22.442 seconds
+Worker 5: Read 150000 instances in 22.803 seconds
+Worker 0: Read 150000 instances in 22.948 seconds
+Logistic regression took 150.240 seconds in 2000 iterations
+Init:	Cost 0.6449 Sq Error 0.2089
+Final:	Cost 0.1838 Sq Error 0.0516
+Weight vector: w0=1.105 w1=-0.738 w2=-0.591 w3=-0.405 w4=-0.014 w5=0.797 w6=-0.752 w7=-0.319 w8=-0.757 w9=0.599 w10=0.258 ...
+Number of features with bias term: 51
+Classification took 0.027 seconds
+          -1        1
+ -1   187484    14593
+  1     6914    90337
+Accuracy: 92.815%
+Precision: 86.093%
+Recall: 92.891%
+Job 1491 finished Sun Nov 30 21:03:37 EST 2014 time 173624 msec
+Job 1526 launched Sun Nov 30 21:16:51 EST 2014
+Job 1526 started Sun Nov 30 21:16:51 EST 2014
+Worker 4: Read 100000 instances in 15.059 seconds
+Worker 1: Read 100000 instances in 15.106 seconds
+Worker 7: Read 100000 instances in 15.226 seconds
+Worker 5: Read 100000 instances in 15.231 seconds
+Worker 3: Read 100000 instances in 15.264 seconds
+Worker 6: Read 100000 instances in 15.525 seconds
+Worker 0: Read 100000 instances in 15.737 seconds
+Worker 2: Read 100000 instances in 16.352 seconds
+Logistic regression took 103.819 seconds in 2000 iterations
+Init:	Cost 0.6490 Sq Error 0.2108
+Final:	Cost 0.1791 Sq Error 0.0499
+Weight vector: w0=1.080 w1=-0.738 w2=-0.553 w3=-0.405 w4=0.018 w5=0.805 w6=-0.727 w7=-0.319 w8=-0.757 w9=0.579 w10=0.322 ...
+Number of features with bias term: 51
+Classification took 0.018 seconds
+          -1        1
+ -1   124754     9752
+  1     3971    60107
+Accuracy: 93.090%
+Precision: 86.040%
+Recall: 93.803%
+Job 1526 finished Sun Nov 30 21:18:51 EST 2014 time 119945 msec
+Job 1543 launched Sun Nov 30 21:35:55 EST 2014
+Job 1543 started Sun Nov 30 21:35:55 EST 2014
+Worker 3: Read 50000 instances in 7.640 seconds
+Worker 2: Read 50000 instances in 7.642 seconds
+Worker 5: Read 50000 instances in 7.795 seconds
+Worker 7: Read 50000 instances in 7.924 seconds
+Worker 4: Read 50000 instances in 7.965 seconds
+Worker 0: Read 50000 instances in 8.023 seconds
+Worker 1: Read 50000 instances in 8.305 seconds
+Worker 6: Read 50000 instances in 8.846 seconds
+Logistic regression took 53.376 seconds in 2000 iterations
+Init:	Cost 0.6414 Sq Error 0.2084
+Final:	Cost 0.1776 Sq Error 0.0496
+Weight vector: w0=1.117 w1=-0.738 w2=-0.593 w3=-0.405 w4=-0.024 w5=0.796 w6=-0.748 w7=-0.319 w8=-0.757 w9=0.573 w10=0.283 ...
+Number of features with bias term: 51
+Classification took 0.016 seconds
+          -1        1
+ -1    61600     4916
+  1     2027    29785
+Accuracy: 92.939%
+Precision: 85.833%
+Recall: 93.628%
+Job 1543 finished Sun Nov 30 21:36:57 EST 2014 time 61817 msec
+Job 1560 launched Sun Nov 30 21:41:04 EST 2014
+Job 1560 started Sun Nov 30 21:41:04 EST 2014
+Worker 1: Read 25000 instances in 4.152 seconds
+Worker 5: Read 25000 instances in 4.182 seconds
+Worker 4: Read 25000 instances in 4.196 seconds
+Worker 2: Read 25000 instances in 4.211 seconds
+Worker 7: Read 25000 instances in 4.218 seconds
+Worker 0: Read 25000 instances in 4.296 seconds
+Worker 6: Read 25000 instances in 4.321 seconds
+Worker 3: Read 25000 instances in 4.356 seconds
+Logistic regression took 27.570 seconds in 2000 iterations
+Init:	Cost 0.6445 Sq Error 0.2084
+Final:	Cost 0.1743 Sq Error 0.0487
+Weight vector: w0=0.976 w1=-0.738 w2=-0.517 w3=-0.405 w4=0.033 w5=0.822 w6=-0.720 w7=-0.319 w8=-0.756 w9=0.587 w10=0.295 ...
+Number of features with bias term: 51
+Classification took 0.006 seconds
+          -1        1
+ -1    32068     2284
+  1     1091    14637
+Accuracy: 93.261%
+Precision: 86.502%
+Recall: 93.063%
+Job 1560 finished Sun Nov 30 21:41:37 EST 2014 time 32263 msec

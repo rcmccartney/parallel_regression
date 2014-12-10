@@ -1,0 +1,95 @@
+Job 1420 launched Sun Nov 30 20:22:23 EST 2014
+Job 1420 started Sun Nov 30 20:22:23 EST 2014
+Worker 0: Read 176096 instances in 26.433 seconds
+Worker 3: Read 191937 instances in 28.639 seconds
+Worker 2: Read 191937 instances in 29.001 seconds
+Worker 1: Read 191937 instances in 29.922 seconds
+Logistic regression took 193.105 seconds in 2000 iterations
+Init:	Cost 0.6469 Sq Error 0.2074
+Final:	Cost 0.1843 Sq Error 0.0520
+Weight vector: w0=0.879 w1=-0.738 w2=-0.562 w3=-0.405 w4=0.009 w5=0.807 w6=-0.723 w7=-0.319 w8=-0.757 w9=0.600 w10=0.285 ...
+Number of features with bias term: 51
+Classification took 0.026 seconds
+          -1        1
+ -1   121342     8410
+  1     5406    53065
+Accuracy: 92.660%
+Precision: 86.320%
+Recall: 90.754%
+Job 1420 finished Sun Nov 30 20:26:03 EST 2014 time 219955 msec
+Job 1468 launched Sun Nov 30 20:49:12 EST 2014
+Job 1468 started Sun Nov 30 20:49:12 EST 2014
+Worker 0: Read 150000 instances in 21.412 seconds
+Worker 1: Read 150000 instances in 21.503 seconds
+Worker 2: Read 150000 instances in 22.260 seconds
+Worker 3: Read 150000 instances in 23.146 seconds
+Logistic regression took 149.426 seconds in 2000 iterations
+Init:	Cost 0.6491 Sq Error 0.2087
+Final:	Cost 0.1900 Sq Error 0.0537
+Weight vector: w0=0.913 w1=-0.738 w2=-0.608 w3=-0.405 w4=-0.018 w5=0.805 w6=-0.733 w7=-0.319 w8=-0.757 w9=0.596 w10=0.317 ...
+Number of features with bias term: 51
+Classification took 0.024 seconds
+          -1        1
+ -1    95781     7215
+  1     4119    42549
+Accuracy: 92.427%
+Precision: 85.502%
+Recall: 91.174%
+Job 1468 finished Sun Nov 30 20:52:03 EST 2014 time 171274 msec
+Job 1512 launched Sun Nov 30 21:09:01 EST 2014
+Job 1512 started Sun Nov 30 21:09:01 EST 2014
+Worker 1: Read 100000 instances in 15.158 seconds
+Worker 2: Read 100000 instances in 15.221 seconds
+Worker 0: Read 100000 instances in 15.225 seconds
+Worker 3: Read 100000 instances in 15.836 seconds
+Logistic regression took 98.436 seconds in 2000 iterations
+Init:	Cost 0.6383 Sq Error 0.2062
+Final:	Cost 0.1888 Sq Error 0.0533
+Weight vector: w0=0.997 w1=-0.738 w2=-0.584 w3=-0.405 w4=0.016 w5=0.817 w6=-0.714 w7=-0.319 w8=-0.757 w9=0.621 w10=0.289 ...
+Number of features with bias term: 51
+Classification took 0.018 seconds
+          -1        1
+ -1    62559     5168
+  1     2151    29414
+Accuracy: 92.629%
+Precision: 85.056%
+Recall: 93.185%
+Job 1512 finished Sun Nov 30 21:10:55 EST 2014 time 114076 msec
+Job 1539 launched Sun Nov 30 21:31:52 EST 2014
+Job 1539 started Sun Nov 30 21:31:52 EST 2014
+Worker 1: Read 50000 instances in 7.636 seconds
+Worker 3: Read 50000 instances in 7.788 seconds
+Worker 0: Read 50000 instances in 7.890 seconds
+Worker 2: Read 50000 instances in 8.018 seconds
+Logistic regression took 51.582 seconds in 2000 iterations
+Init:	Cost 0.6357 Sq Error 0.2043
+Final:	Cost 0.1852 Sq Error 0.0523
+Weight vector: w0=0.710 w1=-0.738 w2=-0.552 w3=-0.405 w4=-0.055 w5=0.826 w6=-0.750 w7=-0.319 w8=-0.756 w9=0.570 w10=0.389 ...
+Number of features with bias term: 51
+Classification took 0.007 seconds
+          -1        1
+ -1    32848     1985
+  1     1515    12816
+Accuracy: 92.881%
+Precision: 86.589%
+Recall: 89.429%
+Job 1539 finished Sun Nov 30 21:32:52 EST 2014 time 59889 msec
+Job 1556 launched Sun Nov 30 21:38:40 EST 2014
+Job 1556 started Sun Nov 30 21:38:40 EST 2014
+Worker 3: Read 25000 instances in 4.274 seconds
+Worker 0: Read 25000 instances in 4.282 seconds
+Worker 2: Read 25000 instances in 4.282 seconds
+Worker 1: Read 25000 instances in 4.569 seconds
+Logistic regression took 29.952 seconds in 2000 iterations
+Init:	Cost 0.6555 Sq Error 0.2143
+Final:	Cost 0.1747 Sq Error 0.0483
+Weight vector: w0=1.306 w1=-0.737 w2=-0.566 w3=-0.404 w4=-0.025 w5=0.788 w6=-0.769 w7=-0.318 w8=-0.756 w9=0.615 w10=0.186 ...
+Number of features with bias term: 51
+Classification took 0.004 seconds
+          -1        1
+ -1    15304     1217
+  1      435     8084
+Accuracy: 93.403%
+Precision: 86.915%
+Recall: 94.894%
+Job 1556 finished Sun Nov 30 21:39:15 EST 2014 time 34621 msec

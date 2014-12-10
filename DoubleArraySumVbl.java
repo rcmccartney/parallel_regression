@@ -1,5 +1,6 @@
 package parallel_regression;
 
+
 import edu.rit.pj2.Vbl;
 
 public class DoubleArraySumVbl implements Vbl {

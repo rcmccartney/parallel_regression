@@ -15,7 +15,7 @@ import edu.rit.pj2.Job;
  * 
  * Our goal is to get a low classification error on unseen instances of data
  * 
- * Usage: java pj2 LogRegSeq <trainFile> <chunked>
+ * Usage: java pj2 LogRegSeq <trainFile>
  *  
  * @author  Robert McCartney
  * @version 9-Nov-2014
@@ -39,19 +39,19 @@ public class LogRegPar extends Job {
 		int snap = 0;
 		int records = -1;
 		String test = "";
-		boolean chunked=false;
+		boolean chunked=true;
 		int minibatch = 0;
 		double gamma = 100.0;
 		int batchtime = 5;
 		double testPercent = 0.0;
 		try {
-			//required argument
-			chunked = Boolean.parseBoolean(args[1]);
 			//optional arguments
 			for(int i = 2; i < args.length; i++) {
 				String[] curr = args[i].split("="); 
 				if (curr[0].equals("seed"))
 					seed = Long.parseLong(curr[1]);
+				else if (curr[0].equals("chunked"))
+					chunked = Boolean.parseBoolean(curr[1]);
 				else if (curr[0].equals("testFile"))
 					test = curr[1];
 				else if (curr[0].equals("sep"))
@@ -148,9 +148,9 @@ public class LogRegPar extends Job {
 	private static void usageError() {
 		System.err.println("Usage: java pj2 LogRegSeq <trainFile> <chunked>");
 		System.err.println("<trainFile> is a real-valued data file");
-		System.err.println("<chunked> is boolean to specify the data was chunked into sub-files on cluster nodes");
-		System.err.println("#####################");
 		System.err.println("The following are additional options available:");
+		System.err.println("#####################");
+		System.err.println("[chunked=boolean] if data was chunked into sub-files on cluster nodes, default is True");
 		System.err.println("[seed=long] value to seed the prng, default is 1L");
 		System.err.println("[testFile=file] specify test set, default is <trainFile>");
 		System.err.println("[alpha=double] specify learning rate, default is 0.05");

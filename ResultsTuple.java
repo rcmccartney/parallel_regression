@@ -1,5 +1,6 @@
 package parallel_regression;
 
+
 import java.io.IOException;
 
 import edu.rit.io.InStream;

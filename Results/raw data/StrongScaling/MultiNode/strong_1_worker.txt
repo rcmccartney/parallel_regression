@@ -1,0 +1,96 @@
+Job 1307 launched Sun Nov 30 19:28:24 EST 2014
+Job 1307 started Sun Nov 30 19:28:24 EST 2014
+Worker 0: Read 191937 instances in 28.663 seconds
+Logistic regression took 179.243 seconds in 2000 iterations
+Init:	Cost 0.6433 Sq Error 0.2122
+Final:	Cost 0.1787 Sq Error 0.0491
+Weight vector: w0=1.463 w1=-0.738 w2=-0.600 w3=-0.405 w4=-0.003 w5=0.820 w6=-0.747 w7=-0.319 w8=-0.756 w9=0.613 w10=0.212 ...
+Number of features with bias term: 51
+Classification took 0.025 seconds
+          -1        1
+ -1    27439     2926
+  1      535    17163
+Accuracy: 92.799%
+Precision: 85.435%
+Recall: 96.977%
+Job 1307 finished Sun Nov 30 19:31:52 EST 2014 time 208343 msec
+Job 1319 launched Sun Nov 30 19:39:36 EST 2014
+Job 1319 started Sun Nov 30 19:39:36 EST 2014
+Worker 0: Read 100000 instances in 15.582 seconds
+Logistic regression took 88.037 seconds in 2000 iterations
+Init:	Cost 0.6813 Sq Error 0.2245
+Final:	Cost 0.1722 Sq Error 0.0467
+Weight vector: w0=1.019 w1=-0.738 w2=-0.562 w3=-0.404 w4=0.069 w5=0.781 w6=-0.689 w7=-0.318 w8=-0.756 w9=0.587 w10=0.362 ...
+Number of features with bias term: 51
+Classification took 0.008 seconds
+          -1        1
+ -1    15107     1191
+  1      461     8064
+Accuracy: 93.345%
+Precision: 87.131%
+Recall: 94.592%
+Job 1319 finished Sun Nov 30 19:41:20 EST 2014 time 104029 msec
+Job 1334 launched Sun Nov 30 19:45:19 EST 2014
+Job 1334 started Sun Nov 30 19:45:19 EST 2014
+Worker 0: Read 75000 instances in 11.105 seconds
+Logistic regression took 75.746 seconds in 2000 iterations
+Init:	Cost 0.6423 Sq Error 0.2100
+Final:	Cost 0.1945 Sq Error 0.0549
+Weight vector: w0=1.215 w1=-0.737 w2=-0.633 w3=-0.404 w4=-0.027 w5=0.818 w6=-0.743 w7=-0.318 w8=-0.756 w9=0.569 w10=0.246 ...
+Number of features with bias term: 51
+Classification took 0.005 seconds
+          -1        1
+ -1    10886     1218
+  1      303     6204
+Accuracy: 91.827%
+Precision: 83.589%
+Recall: 95.343%
+Job 1334 finished Sun Nov 30 19:46:46 EST 2014 time 87229 msec
+Job 1345 launched Sun Nov 30 19:49:50 EST 2014
+Job 1345 started Sun Nov 30 19:49:50 EST 2014
+Worker 0: Read 50000 instances in 7.877 seconds
+Logistic regression took 49.058 seconds in 2000 iterations
+Init:	Cost 0.6736 Sq Error 0.2234
+Final:	Cost 0.1674 Sq Error 0.0450
+Weight vector: w0=0.933 w1=-0.737 w2=-0.594 w3=-0.404 w4=0.041 w5=0.754 w6=-0.732 w7=-0.318 w8=-0.755 w9=0.618 w10=0.433 ...
+Number of features with bias term: 51
+Classification took 0.001 seconds
+          -1        1
+ -1     7566      584
+  1      214     3927
+Accuracy: 93.507%
+Precision: 87.054%
+Recall: 94.832%
+Job 1345 finished Sun Nov 30 19:50:47 EST 2014 time 57319 msec
+Job 1355 launched Sun Nov 30 19:53:01 EST 2014
+Job 1355 started Sun Nov 30 19:53:01 EST 2014
+Worker 0: Read 30000 instances in 4.908 seconds
+Logistic regression took 29.039 seconds in 2000 iterations
+Init:	Cost 0.6962 Sq Error 0.2238
+Final:	Cost 0.1543 Sq Error 0.0434
+Weight vector: w0=0.418 w1=-0.736 w2=-0.463 w3=-0.404 w4=0.108 w5=0.885 w6=-0.605 w7=-0.318 w8=-0.754 w9=0.631 w10=0.335 ...
+Number of features with bias term: 51
+Classification took 0.001 seconds
+          -1        1
+ -1     4861      231
+  1      198     2207
+Accuracy: 94.278%
+Precision: 90.525%
+Recall: 91.767%
+Job 1355 finished Sun Nov 30 19:53:35 EST 2014 time 34316 msec
+Job 1385 launched Sun Nov 30 19:59:45 EST 2014
+Job 1385 started Sun Nov 30 19:59:45 EST 2014
+Worker 0: Read 176096 instances in 27.297 seconds
+edu.rit.pj2.tracker.HeartbeatFailedException: Job 1385 tracker heartbeat failed
+	at edu.rit.pj2.Job$TrackerHeartbeat.died(Job.java:645)
+	at edu.rit.util.Heartbeat.doDied(Heartbeat.java:182)
+	at edu.rit.util.Heartbeat.access$100(Heartbeat.java:51)
+	at edu.rit.util.Heartbeat$2.run(Heartbeat.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
