@@ -6,11 +6,11 @@ PJ2 library
 This program uses the PJ2 library for parallel programming, located at
 http://www.cs.rit.edu/~ark/pj2.shtml.
 
-The paradigm runs on a multicore or multinode cluster for running Tasks
-and Jobs.  This program is used for logistic regression on massive 
-datasets.  It can be used in both sequential and parallel verisons,
-and the parallel version can be set to batched training, based off 
-of the following paper: 
+The paradigm runs on a multicore or multinode cluster for running 
+Tasks and Jobs. This program is used for logistic regression on 
+massive datasets.  It can be used in both sequential and parallel 
+verisons, and the parallel version can be set to batched training, 
+based off of the following paper: 
 
 Mu Li, Tong Zhang, Yuqiang Chen, and Alexander J. Smola. 2014. Efficient 
 mini-batch training for stochastic optimization. In Proceedings of the 
@@ -18,12 +18,12 @@ mini-batch training for stochastic optimization. In Proceedings of the
 mining (KDD '14). ACM, New York, NY, USA, 661-670. 
 URL:http://dl.acm.org/citation.cfm?id=2623330.2623612&coll=DL&dl=ACM&CFID=415399891&CFTOKEN=69514427
 
-The URLDataStrategy class is a class specifically implemented for the large 
-URL Reputation dataset, which is the data used for the results and archived at:
-https://archive.ics.uci.edu/ml/datasets/URL+Reputation.
-This dataset is extremely sparse and stored in SVM light format, so the 
-URLDataStrategy implements some unique ways of performing the dot product.  
-See the following link to the paper for more information: 
+The URLDataStrategy class is a class specifically implemented for the 
+large URL Reputation dataset, which is the data used for the results and 
+archived at https://archive.ics.uci.edu/ml/datasets/URL+Reputation.
+This dataset is extremely sparse and stored in SVM light format, so 
+the URLDataStrategy implements some unique ways of performing the dot 
+product. See the following link to the paper for more information: 
 
 Justin Ma, Lawrence K. Saul, Stefan Savage, and Geoffrey M. Voelker. 2009. 
 Identifying suspicious URLs: an application of large-scale online learning. 
